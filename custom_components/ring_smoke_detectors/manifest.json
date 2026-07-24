@@ -1,0 +1,11 @@
+{
+  "domain": "ring_smoke_detectors",
+  "name": "Ring Smoke Detectors",
+  "codeowners": ["@simplytoast1"],
+  "config_flow": true,
+  "documentation": "https://github.com/simplytoast1/ha-ring-smoke-detectors",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/simplytoast1/ha-ring-smoke-detectors/issues",
+  "requirements": [],
+  "version": "1.1.1"
+}
