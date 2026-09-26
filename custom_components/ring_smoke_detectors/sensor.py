@@ -139,10 +139,10 @@ class RingCOLevelSensor(RingSmokeDetectorEntity, SensorEntity):
 class RingWifiSignalStrengthSensor(RingSmokeDetectorEntity, SensorEntity):
     """Sensor for WiFi signal strength."""
 
+    _attr_name = "WiFi Signal Strength"
     _attr_device_class = SensorDeviceClass.SIGNAL_STRENGTH
     _attr_native_unit_of_measurement = SIGNAL_STRENGTH_DECIBELS_MILLIWATT
     _attr_state_class = SensorStateClass.MEASUREMENT
-    _attr_translation_key = "wifi_signal_strength"
 
     def __init__(self, coordinator: RingSmokeCoordinator, zid: str) -> None:
         super().__init__(coordinator, zid, "wifi_signal_strength")
@@ -158,8 +158,8 @@ class RingWifiSignalStrengthSensor(RingSmokeDetectorEntity, SensorEntity):
 class RingLastCommDateTimeSensor(RingSmokeDetectorEntity, SensorEntity):
     """Sensor for last communication date/time."""
 
+    _attr_name = "Last Communication Time"
     _attr_device_class = SensorDeviceClass.TIMESTAMP
-    _attr_translation_key = "last_comm_time"
 
     def __init__(self, coordinator: RingSmokeCoordinator, zid: str) -> None:
         super().__init__(coordinator, zid, "last_comm_time")
