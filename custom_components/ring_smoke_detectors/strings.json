@@ -41,6 +41,12 @@
     "sensor": {
       "co_level": {
         "name": "CO level"
+      },
+      "wifi_signal_strength": {
+        "name": "WiFi Signal Strength"
+      },
+      "last_comm_time": {
+        "name": "Last Communication Time"
       }
     },
     "event": {

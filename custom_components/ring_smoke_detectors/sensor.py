@@ -135,6 +135,7 @@ class RingCOLevelSensor(RingSmokeDetectorEntity, SensorEntity):
         co_level = components.get("co.level") or {}
         return co_level.get("reading")
 
+
 class RingWifiSignalStrengthSensor(RingSmokeDetectorEntity, SensorEntity):
     """Sensor for WiFi signal strength."""
 
